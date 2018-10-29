@@ -1,0 +1,24 @@
+
+## Some details about the content of this folder ##
+
+The files Firewall-[...].sh contain all the ip6tables commands to setup the
+firewall.  They don't need to be executed.  The others executives files
+(Pythagore.sh, Halles.sh, Stevin.sh, etc) are calling those files if they need
+it for the corresponding router.
+
+** Firewall-Default.sh **
+This file contains the basics commands that allow to flush all the possibles
+old rules to start with a brand new firewall.  It also contains some rules,
+quite basic, about established connections and invalid packets.
+
+** Firewall-InOut.sh **
+This file contains the rules about the connection between the inner network and
+the wild internet.  It will only be called by Pythagore.sh and Halles.sh.
+The file should be run with an argument, 200 or 300, depending on the files
+calling it.
+
+** Firewall-SetUp **
+This file contains more specific rules concerning the different given rights
+for a user and some other security rules about some protocols or services.
+
+##  ##

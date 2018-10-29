@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+# Run trapnotifier.py every minute
+*/1 * * * * python3 scripts/trapnotifier.py

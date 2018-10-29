@@ -1,0 +1,20 @@
+---
+name: Carnoy
+bird6::routing_id: 42.0.0.1 # Should be changed for your group (for instance 42 -> your group number)
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - Carnoy-eth0
+    - Carnoy-eth1
+    - Carnoy-eth2
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
+# SNMP specific infos
+snmp::sysLocation: Carnoy building
+snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
+snmp::trap_functions: 
+  - ospf
+snmp::is_monitor: false
+# RADVD sprecific infos
+radvd::RADVD: true
+radvd::prefix: 
+radvd::route:
+radvd::interface:

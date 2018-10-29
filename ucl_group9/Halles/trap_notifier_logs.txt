@@ -1,0 +1,7 @@
+snmptrap: Failure in sendto (Invalid argument)
+snmptrap: Failure in sendto (Invalid argument)
+snmptrap: Failure in sendto (Invalid argument)
+snmptrap: Failure in sendto (Invalid argument)
+snmptrap: Failure in sendto (Invalid argument)
+snmptrap: Failure in sendto (Invalid argument)
+snmptrap: Failure in sendto (Invalid argument)

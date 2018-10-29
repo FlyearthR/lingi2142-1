@@ -1,0 +1,20 @@
+---
+name: Halles
+bird6::routing_id: 42.0.0.2
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - Halles-eth0
+    - Halles-eth1
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
+# BGP data to be added !
+bird6::bgp: true
+bird6::asn: 200
+bird6::gnum: 9
+# SNMP specific infos
+snmp::sysLocation: Halles building
+snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
+snmp::trap_functions: 
+  - bgp
+  - ospf
+  - dns
+snmp::is_monitor: true

@@ -34,9 +34,16 @@ for ns in $(ip netns list) ; do
     sleep .05
     # Then SIGKILL
     ip netns pids "$ns" | xargs '-I{}' kill -s 9 '{}'
-    # Destroy the net NS --- All interfaces/bridges will be destroyed alonside
+    # Destroy the net NS --- All interfaces/bridges will be destroyed alongside
     ip netns del "$ns"
+    rm -rf ucl_group9/"$ns"/snmp
+    rm -rf ucl_group9/"$ns"/monitoring
+    rm -rf ucl_group9/"$ns"/cron.d
+    rm -rf ucl_group9/"$ns"/scripts
+    rm -f ucl_group9/"$ns"/monitoring_logs.txt
 done
 
 # Destroy bird/zebra temp files
 rm -f /tmp/*.{api,ctl}
+
+pkill -u root cron

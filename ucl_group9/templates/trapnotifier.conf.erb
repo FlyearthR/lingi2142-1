@@ -1,0 +1,5 @@
+<%# ERB template https://puppet.com/docs/puppet/5.3/lang_template_erb.html -%>
+<%= @node_name %>
+<%- @trap_functions.each do |fun| -%>
+<%= fun %>
+<%- end -%>

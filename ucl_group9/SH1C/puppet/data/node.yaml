@@ -1,0 +1,22 @@
+---
+name: SH1C
+bird6::routing_id: 42.0.0.5
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - SH1C-eth0
+    - SH1C-eth1
+  stub_itfs: [] # Passive interfaces (e.g., LANs)
+# SNMP specific infos
+snmp::sysLocation: SH1C building
+snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
+snmp::trap_functions: 
+  - ospf
+snmp::is_monitor: false
+
+#RADVD specific infos
+radvd::RADVD: true
+#radvd::prefix: fd00:300:9:1200
+#radvd::route: fd00:300:9:1200
+#radvd::interface: SH1C-lan0
+radvd::lans:
+  - lan0: ['SH1C-lan0','1200']

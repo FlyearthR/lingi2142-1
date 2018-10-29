@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List here all files from /etc that should be copied
-ETC_IMPORT=(hosts passwd group manpath.config services)
+ETC_IMPORT=(hosts passwd group manpath.config services alternatives)
 
 ## See the bottom for the bootstrap
 
@@ -37,7 +37,13 @@ function mk_node {
     mkdir -p "$CDIR"
     [ ! -f "${CDIR}/hostname" ] && echo "$1" > "${CDIR}/hostname"
     for file in "${ETC_IMPORT[@]}"; do
-        [ ! -f "${CDIR}/${file}" ] && cp "/etc/${file}" "${CDIR}/${file}"
+        if [ -f "${CDIR}/${file}" ] || [ -d "${CDIR}/${file}" ]; then
+                continue
+        elif [ -f "/etc/${file}" ]; then
+                cp "/etc/${file}" "${CDIR}/${file}"
+        elif [ -d "/etc/${file}" ]; then
+                cp -r "/etc/${file}" "${CDIR}/${file}"
+        fi
     done
     # Enable the loopback in the net NS, quite a few programs require it
     ip netns exec "$1" ip link set dev lo up
@@ -141,7 +147,8 @@ function add_LAN {
 function attach_to_LAN {
     next_port "$3"
     local port="$__ret"
-    _attach_to_LAN_named "$1" "$2" "$3" "$port" "${1}-${3}"
+    local itf="${1}-${3}"
+    _attach_to_LAN_named "$1" "$2" "$3" "$port" "${itf//${2}-}"
 }
 
 # Create a LAN linking a set of hosts and a router
@@ -191,6 +198,12 @@ function warn {
     echo "[WARN] $*"
 }
 
+# Start crontab for monitoring
+#function start_traps {
+#    cp ucl_group9/templates/trapnotify /etc/cron.d/trapnotify
+#    crontab /etc/cron.d/trapnotify
+#}
+
 set -e
 
 if [[ "$UID" != "0" ]]; then
@@ -236,5 +249,8 @@ mk_topo
 for node in "${!PORTCOUNT[@]}"; do
     node_exec "$node" "$STARTUP"
 done
+
+# Start trapnotifiers
+#start_traps
 
 info "The network has been started!"

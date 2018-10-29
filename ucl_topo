@@ -14,15 +14,16 @@
 
 # You can override any of these settings on a per-topology basis
 # Group number
-GROUPNUMBER=42
+GROUPNUMBER=9
 # Node configs
-CONFIGDIR=ucl_minimal_cfg
+CONFIGDIR=ucl_group9
 # boot script name
 BOOT="boot.sh"
 # startup script name
 STARTUP="start.sh"
-PREFIXLEN_as200=48
-PREFIXBASE_as200="fd00:200:${GROUPNUMBER}::/${PREFIXLEN_as200}"
+PREFIXLEN=48
+PREFIXBASE_as200="fd00:200:${GROUPNUMBER}" #::/${PREFIXLEN_as200}"
+PREFIXBASE_as300="fd00:300:${GROUPNUMBER}"
 # You can reuse the above two to generate ip addresses/routes, ...
 # in you boot and startup scripts
 # e.g. "${PREFIXBASE}:1234::/$((PREFIXLEN+16))"
@@ -44,6 +45,13 @@ function mk_topo {
 
     echo "@@ Adding LANs"
     # You can add your LANs here
+    mk_LAN Stevin LUC
+    mk_LAN Carnoy TOM
+    mk_LAN Carnoy NS1 MO1
+    mk_LAN Halles NS2 MO2
+    mk_LAN SH1C SH1 SH2
+    mk_LAN Pythagore GUI
+    mk_LAN Michotte ART
 
     echo "@@ Bridging the network"
     # Connect to belneta and belnetb

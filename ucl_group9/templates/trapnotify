@@ -1,0 +1,12 @@
+SHELL=/bin/bash
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+# Run trapnotifier.py every minute
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/Halles && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/Carnoy && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/Pythagore && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/SH1C && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/Michotte && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/Stevin && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/MO1 && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py
+* * * * * cd /home/vagrant/lingi2142-1/ucl_group9/MO2 && python3 /home/vagrant/lingi2142-1/scripts/trapnotifier.py

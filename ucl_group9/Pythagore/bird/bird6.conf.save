@@ -1,0 +1,39 @@
+router id 42.0.0.4;
+
+protocol kernel {
+ 	learn;
+	scan time 20;
+	export all;
+}
+
+protocol device {
+	scan time 10;
+}
+
+protocol ospf {
+
+	area 0.0.0.0 {
+			interface "Pythagore-eth0" {
+				hello 1;
+				dead 3;
+			};
+			interface "Pythagore-eth1" {
+				hello 1;
+				dead 3;
+			};
+			interface "Pythagore-eth2" {
+				hello 1;
+				dead 3;
+			};
+    };
+}
+
+protocol bgp pop300 {
+	local as 9;
+	neighbor fd00:300:9::b as 300;
+	dire
+	export all;
+	import all;
+}
+
+

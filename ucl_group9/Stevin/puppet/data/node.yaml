@@ -1,0 +1,15 @@
+---
+name: Stevin
+bird6::routing_id: 42.0.0.6
+bird6::ospfv3:
+  hello_itfs:  # Activate OSPFv3 only on these interfaces
+    - Stevin-eth0
+    - Stevin-eth1
+  stub_itfs:
+    - lan0-LUC  # Passive interfaces (e.g., LANs)
+# SNMP specific infos
+snmp::sysLocation: Stevin building
+snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
+snmp::trap_functions: 
+  - ospf
+snmp::is_monitor: false

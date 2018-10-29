@@ -31,4 +31,13 @@ service bird6 stop
 
 (cd /sbin && ln -s /usr/lib/quagga/* .)
 
+# Install monitoring stuff
+apt-get -y -qq --force-yes install snmp
+apt-get -y -qq --force-yes install snmpd
+apt-get -y -qq --force-yes install python3 python3-pip
+apt-get -y -qq --force-yes install rrdtool python-rrdtool librrd-dev
+pip3 install pysnmp
+pip3 install pysnmp-mibs
+pip3 install rrdtool
+
 su vagrant -c 'cd && git clone https://github.com/UCL-INGI/lingi2142.git'

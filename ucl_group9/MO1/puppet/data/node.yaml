@@ -1,0 +1,8 @@
+---
+name: MO1
+# SNMP specific infos
+snmp::sysLocation: MO1 building
+snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
+snmp::trap_functions:
+  - dns
+snmp::is_monitor: true
