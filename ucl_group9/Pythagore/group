@@ -54,3 +54,7 @@ quaggavty:x:113:
 quagga:x:114:
 bird:x:115:
 puppet:x:116:
+bind:x:117:
+opendnssec:x:118:
+softhsm:x:999:
+snmp:x:119:

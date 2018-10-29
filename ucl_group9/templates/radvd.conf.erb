@@ -1,5 +1,5 @@
 <%- @lans.each do |var| -%>
-interface <%= |var|[0] %>
+interface <%= var[1][0]  %>
 {
 	AdvSendAdvert on;
 
@@ -23,13 +23,13 @@ interface <%= |var|[0] %>
 #
 # example of a standard prefix
 #
-	prefix fd00:300:9:<%= |var|[1] %>::/64
+	prefix fd00:300:9:<%= var[1][1] %>::/64
 	{
 		AdvOnLink on;
 		AdvAutonomous on;
 		AdvRouterAddr off;
 	};
-	prefix fd00:200:9:<%= |var|[1] %>::/64
+	prefix fd00:200:9:<%= var[1][1]  %>::/64
         {
                 AdvOnLink on;
                 AdvAutonomous on;
@@ -42,12 +42,12 @@ interface <%= |var|[0] %>
 # enable it manually (e.g. on Linux, change the value of
 # sysctl accept_ra_rt_info_max_plen to 48 or 64)
 #
-	route fd00:300:9:<%= |var|[1] %>::/64
+	route fd00:300:9:<%= var[1][1]  %>::/64
 	{
 		AdvRoutePreference high;
 		AdvRouteLifetime 3600;
 	};
-	route fd00:200:9:<%= |var|[1] %>::/64
+	route fd00:200:9:<%= var[1][1]  %>::/64
         {
                 AdvRoutePreference high;
                 AdvRouteLifetime 3600;

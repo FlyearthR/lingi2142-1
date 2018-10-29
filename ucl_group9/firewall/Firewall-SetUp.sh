@@ -151,16 +151,6 @@ ip6tables -A INPUT -p icmpv6 -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 -j ACCEPT
 ip6tables -A OUTPUT -p icmpv6 -j ACCEPT
 
-## ALL ##
-# Block what hasn't been allowed
-for i in "$PREF200::/48" "$PREF300::/48";
-do
-	ip6tables -A INPUT -s $i -j DROP
-	ip6tables -A FORWARD -s $i -j DROP
-	ip6tables -A FORWARD -d $i -j DROP
-	ip6tables -A OUTPUT -d $i -j DROP
-done;
-
 # Record all dropped packets in files
 ip6tables -N LOGS
 ip6tables -A INPUT -j LOGS

@@ -4,19 +4,16 @@ puppet apply --detailed-exitcodes --verbose --parser future --hiera_config=/etc/
 
 source "$(cd "$(dirname "$0")"; pwd -P)/../ucl_topo"
 
-ip address add dev Halles-eth0 "${PREFIXBASE_as200}:2000::100"
-ip address add dev Halles-eth1 "${PREFIXBASE_as200}:2000::101"
-ip address add dev Halles-eth0 "${PREFIXBASE_as300}:2000::100"
-ip address add dev Halles-eth1 "${PREFIXBASE_as300}:2000::101"
+ip address add dev Halles-eth0 "${PREFIXBASE_as200}:2100::0"
+ip address add dev Halles-eth1 "${PREFIXBASE_as200}:2100::1"
+ip address add dev Halles-eth0 "${PREFIXBASE_as300}:2100::0"
+ip address add dev Halles-eth1 "${PREFIXBASE_as300}:2100::1"
 
-ip address add dev Halles-lan0 "${PREFIXBASE_as200}:2100::/$((PREFIXLEN+16))"
-ip address add dev Halles-lan0 "${PREFIXBASE_as300}:2100::/$((PREFIXLEN+16))"
+ip address add dev Halles-lan0 "${PREFIXBASE_as200}:2101::/$((PREFIXLEN+16))"
+ip address add dev Halles-lan0 "${PREFIXBASE_as300}:2101::/$((PREFIXLEN+16))"
 
-ip route add dev Halles-lan0 "${PREFIXBASE_as200}:2100::/$((PREFIXLEN+16))"
-ip route add dev Halles-lan0 "${PREFIXBASE_as300}:2100::/$((PREFIXLEN+16))"
-
-ip route add blackhole "${PREFIXBASE_as300}::/50"
-ip route add blackhole "${PREFIXBASE_as200}::/50"
+ip route add dev Halles-lan0 "${PREFIXBASE_as200}:2101::/$((PREFIXLEN+16))"
+ip route add dev Halles-lan0 "${PREFIXBASE_as300}:2101::/$((PREFIXLEN+16))"
 
 wait
 

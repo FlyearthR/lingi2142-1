@@ -18,11 +18,11 @@ CFG_FILE_PATH = '/etc/scripts/trapnotifier.conf'
 # SNMPTRAP
 VERSION = '2c'
 COMMUNITY = 'public' 
-MONITOR_IPs = ['fd00:200:9:2400::1', 'fd00:200:9:2100::1', 'fd00:300:9:2000::100']    # IPs of the monitoring servers
+MONITOR_IPs = ['fd00:200:9:2401::1', 'fd00:200:9:2101::1', 'fd00:300:9:2100::']    # IPs of the monitoring servers
 UPTIME = ''                 # Let the agent set the uptime
 
 # DNS
-NAME_SERVERS = ['fd00:200:9:2400::2', 'fd00:200:9:2100::2']
+NAME_SERVERS = ['fd00:200:9:2401::2', 'fd00:200:9:2101::2']
 TARGET = 'www.uclouvain.be'
 
 

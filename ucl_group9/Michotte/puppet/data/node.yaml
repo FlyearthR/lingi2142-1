@@ -12,3 +12,9 @@ snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
 snmp::trap_functions: 
   - ospf
 snmp::is_monitor: false
+#RADVD specific infos
+radvd::radvd: true
+radvd::lans:
+  lan0:
+    - Michotte-lan0
+    - 0300

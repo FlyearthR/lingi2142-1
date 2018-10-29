@@ -52,7 +52,7 @@ def monitoring_shutdown(signum, frame):
 
 def agent_monitor(stop_event, ips, snmp_port, db_directory, time_interval, snmpv3_user, data_collect_funs):
     """Monitors an agent by regularly sending snmp get requests"""
-    stop_event.wait(60)
+    stop_event.wait(180)
     # Instantiate SNMP engine
     snmp_engine = SnmpEngine()
 

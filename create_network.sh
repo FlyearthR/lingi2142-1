@@ -37,9 +37,7 @@ function mk_node {
     mkdir -p "$CDIR"
     [ ! -f "${CDIR}/hostname" ] && echo "$1" > "${CDIR}/hostname"
     for file in "${ETC_IMPORT[@]}"; do
-        if [ -f "${CDIR}/${file}" ] || [ -d "${CDIR}/${file}" ]; then
-                continue
-        elif [ -f "/etc/${file}" ]; then
+        if [ -f "/etc/${file}" ]; then
                 cp "/etc/${file}" "${CDIR}/${file}"
         elif [ -d "/etc/${file}" ]; then
                 cp -r "/etc/${file}" "${CDIR}/${file}"

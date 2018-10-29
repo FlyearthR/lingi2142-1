@@ -40,4 +40,8 @@ pip3 install pysnmp
 pip3 install pysnmp-mibs
 pip3 install rrdtool
 
+systemctl stop snmpd
+sudo bash -c "echo 'createUser arthur SHA password AES secret_key' >> /var/lib/snmp/snmpd.conf"
+systemctl start snmpd
+
 su vagrant -c 'cd && git clone https://github.com/UCL-INGI/lingi2142.git'

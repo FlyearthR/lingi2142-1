@@ -1,27 +1,31 @@
-# Puppet looks in data/node.yaml for radvd::RADVD, radvd::prefix, radvd::route, radvd::interface automatically
+# Puppet looks in data/node.yaml for radvd::radvd, radvd::prefix, radvd::route, radvd::interface automatically
 # These variables are now accessible in the template
-class bind (Boolean $RADVD = false, String $prefix, String $route, String $interface) {
-  # Get name of the node (lookup in data/node.yaml
-  $node_name = lookup("name")
-  if $RADVD {
+class radvd (Boolean $radvd = false, Hash $lans = {}) {
+    
+  if $radvd {
     file {"/etc/radvd.conf":
-      ensure => directory,
-      source => template("/templates/radvd.conf.erb"),
-      recurse => true,
+      ensure => file,
+      owner => root,
+      group => root,
+      replace => true,
+      content => template("/templates/radvd.conf.erb"),
     }
     file {"/etc/init.d":
       ensure => directory,
+      owner => root,
+      group => root,
       recurse => true,
     }
     file {"/etc/init.d/radvd":
       require => File["/etc/init.d"],
       ensure => file,
-      source => template("/templates/init.d/radvd"),
+      owner => root,
+      group => root,
+      content => template("/templates/init.d/radvd"),
     }
     exec { "radvd":
-      require => File["/etc/radvd.conf"],
-      require => File["/etc/init.d/radvd"],
-      command => "radvd -C /etc/radvd.conf",
+      require => [File["/etc/radvd.conf"], File["/etc/init.d/radvd"]],
+      command => "/etc/init.d/radvd start",
     }
   }
 

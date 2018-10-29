@@ -4,11 +4,11 @@ puppet apply --verbose --parser future --hiera_config=/etc/puppet/hiera.yaml /et
 
 source "$(cd "$(dirname "$0")"; pwd -P)/../ucl_topo"
 
-ip address add dev MO2-eth0 "${PREFIXBASE_as200}:2100::1/$((PREFIXLEN+16))"
-ip address add dev MO2-eth0 "${PREFIXBASE_as300}:2100::1/$((PREFIXLEN+16))"
+ip address add dev MO2-eth0 "${PREFIXBASE_as200}:2101::1/$((PREFIXLEN+16))"
+ip address add dev MO2-eth0 "${PREFIXBASE_as300}:2101::1/$((PREFIXLEN+16))"
 
-ip route add via "${PREFIXBASE_as200}:2100::" dev MO2-eth0 ::/0
-ip route add via "${PREFIXBASE_as300}:2100::" dev MO2-eth0 "${PREFIXBASE_as300}::/${PREFIXLEN}"
+ip route add via "${PREFIXBASE_as200}:2101::" dev MO2-eth0 ::/0
+ip route add via "${PREFIXBASE_as300}:2101::" dev MO2-eth0 "${PREFIXBASE_as300}::/${PREFIXLEN}"
 
 wait
 

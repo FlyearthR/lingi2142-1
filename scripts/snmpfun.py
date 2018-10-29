@@ -1,3 +1,4 @@
+# https://oss.oetiker.ch/rrdtool/tut/rrd-beginners.en.html
 import os, sys, time
 # PySNMP High Level API. Commands: bulkCmd, getCmd, nextCmd and setCmd
 from pysnmp.hlapi import *
@@ -34,6 +35,8 @@ def update_rrd(snmp_engine, user, upd_target, data, db_location, file_location):
             return 'DATA_OK'
     except PySnmpError as err:
         return 'ERROR:\n %s' % str(err)
+    except Exception as err:
+        return 'ERROR:\n %s' % str(err)
 
 
 """INITIALIZATION FUNCTIONS"""
@@ -51,7 +54,7 @@ def initialize_ip_info_db(directory, time_interval, time_wait_value):
                     'DS:received:COUNTER:'+str(time_wait_value)+':0:U',
                     'DS:delivered:COUNTER:'+str(time_wait_value)+':0:U',
                     'DS:forwarded:COUNTER:'+str(time_wait_value)+':0:U', 
-                    'RRA:AVERAGE:0.5:1:100')
+                    'RRA:AVERAGE:0.5:1:8640')
 
 """DATA COLLECTION FUNCTIONS"""
 def ip_info(snmp_engine, user, upd_targets, directory):

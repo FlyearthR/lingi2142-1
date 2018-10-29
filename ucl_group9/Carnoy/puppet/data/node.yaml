@@ -15,7 +15,7 @@ snmp::trap_functions:
 snmp::is_monitor: false
 
 #RADVD specific infos
-radvd::RADVD: true
+radvd::radvd: true
 #radvd::prefix: 4400
 #radvd::route: 4400
 #radvd::interface: 

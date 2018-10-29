@@ -17,3 +17,11 @@ snmp::trap_functions:
   - bgp
   - ospf
 snmp::is_monitor: false
+
+#RADVD specific infos
+radvd::radvd: true
+radvd::lans:
+  lan0:
+    - Pythagore-lan0
+    - 5600
+
