@@ -6,7 +6,7 @@ bird6::ospfv3:
     - Stevin-eth0
     - Stevin-eth1
   stub_itfs:
-    - lan0-LUC  # Passive interfaces (e.g., LANs)
+    - Stevin-lan0
 # SNMP specific infos
 snmp::sysLocation: Stevin building
 snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>

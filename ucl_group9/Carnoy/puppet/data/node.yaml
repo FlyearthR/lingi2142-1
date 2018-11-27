@@ -6,7 +6,9 @@ bird6::ospfv3:
     - Carnoy-eth0
     - Carnoy-eth1
     - Carnoy-eth2
-  stub_itfs: [] # Passive interfaces (e.g., LANs)
+  stub_itfs:
+    - Carnoy-lan0
+    - Carnoy-lan1
 # SNMP specific infos
 snmp::sysLocation: Carnoy building
 snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>

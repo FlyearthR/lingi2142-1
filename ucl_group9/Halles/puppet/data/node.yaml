@@ -5,7 +5,8 @@ bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
     - Halles-eth0
     - Halles-eth1
-  stub_itfs: [] # Passive interfaces (e.g., LANs)
+  stub_itfs:
+    - Halles-lan0
 # BGP data to be added !
 bird6::bgp: true
 bird6::asn: 200

@@ -6,7 +6,8 @@ bird6::ospfv3:
     - Pythagore-eth0
     - Pythagore-eth1
     - Pythagore-eth2
-  stub_itfs: [] # Passive interfaces (e.g., LANs)
+  stub_itfs:
+    - Pythagore-lan0
 bird6::bgp: true
 bird6::asn: 300
 bird6::gnum: 9
