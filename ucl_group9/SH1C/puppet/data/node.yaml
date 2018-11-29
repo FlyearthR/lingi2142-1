@@ -5,7 +5,7 @@ bird6::ospfv3:
   hello_itfs:  # Activate OSPFv3 only on these interfaces
     - SH1C-eth0
     - SH1C-eth1
-  stub_itfs: []
+  stub_itfs:
     - SH1C-lan0
 # SNMP specific infos
 snmp::sysLocation: SH1C building
