@@ -16,12 +16,12 @@ CFG_FILE_PATH = '/etc/scripts/trapnotifier.conf'
 # SNMPTRAP
 VERSION = '2c'
 COMMUNITY = 'public' 
-MONITOR_IPs = ['fd00:200:9:2401::1', 'fd00:200:9:2101::1', 'fd00:300:9:2100::']    # IPs of the monitoring servers
+MONITOR_IPs = ['fd00:200:9:2401::1', 'fd00:200:9:2101::1']    # IPs of the monitoring servers
 UPTIME = ''                 # Let the agent set the uptime
 
 # DNS
 NAME_SERVERS = ['fd00:200:9:2401::2', 'fd00:200:9:2101::2']
-TARGET = 'www.uclouvain.be'
+TARGET = 'uclouvain.be'
 
 
 class Trapnotifiers:
@@ -58,13 +58,14 @@ class Trapnotifiers:
             resolver = dns.resolver.Resolver()
             resolver.timeout = 5
             resolver.lifetime = 5
-            resolver.nameservers=[nameServer]
+            resolver.nameservers = [nameServer]
             try:
-                for rdata in resolver.query(TARGET, 'CNAME') :
-                    #print(rdata.target)
+                for rdata in resolver.query(TARGET) :
+                    print('DNS OK')
                     pass
             except dns.exception.DNSException as e:
                 value = 'NS: {} {}'.format(nameServer, str(e))
+                print(value)
                 self.send_traps(oid, object_type, value_type, 'NS: ' + nameServer + ' ' + str(e))
 
     def check_bgp(self):
@@ -148,4 +149,4 @@ with open(CFG_FILE_PATH, 'r') as f:
     while True:
         print('running')
         trap.call_functions()
-        time.sleep(30)
+        time.sleep(15)

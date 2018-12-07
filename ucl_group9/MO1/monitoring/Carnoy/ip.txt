@@ -1,4 +1,0 @@
-SNMP DATA received on Fri Dec  7 12:58:00 2018:
-IP-MIB::ipInReceives.0 = 0
-IP-MIB::ipInDelivers.0 = 0
-IP-MIB::ipForwDatagrams.0 = 0

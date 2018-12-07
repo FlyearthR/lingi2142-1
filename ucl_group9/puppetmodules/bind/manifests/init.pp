@@ -4,11 +4,36 @@ class bind (Boolean $bind = false) {
   if $bind {
     file {"/etc/bind":
       ensure => directory,
-      source => 'puppet:///bind',
-      recurse => remote,
       owner => root,
       group => root,
+      recurse => true,
     }
+    file {"/etc/bind/db.ingi.group9":
+      require => File["/etc/bind"],
+      ensure => file,
+      content => template("/templates/bind/db.ingi.group9"),
+    }
+    file {"/etc/bind/named.conf":
+      require => File["/etc/bind"],
+      ensure => file,
+      content => template("/templates/bind/named.conf"),
+    }
+    file {"/etc/bind/named.conf.local":
+      require => File["/etc/bind"],
+      ensure => file,
+      content => template("/templates/bind/named.conf.local"),
+    }
+    file {"/etc/bind/named.conf.options":
+      require => File["/etc/bind"],
+      ensure => file,
+      content => template("/templates/bind/named.conf.options"),
+    }
+    file {"/etc/bind/rndc.key":
+      require => File["/etc/bind"],
+      ensure => file,
+      content => template("/templates/bind/rndc.key"),
+    }
+
     file {"/etc/init.d":
       ensure => directory,
       owner => root,
@@ -21,7 +46,7 @@ class bind (Boolean $bind = false) {
       owner => root,
       group => root,
       mode => '777',
-      source => template("/templates/init.d/bind9"),
+      content => template("/templates/init.d/bind9"),
     }
     exec { "bind":
       require => [File["/etc/bind"], File["/etc/init.d/bind9"]],

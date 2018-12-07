@@ -8,3 +8,278 @@ snmptrap: Failure in sendto (Network is unreachable)
 snmptrap: Failure in sendto (Network is unreachable)
 snmptrap: Failure in sendto (Network is unreachable)
 snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+snmptrap: Failure in sendto (Network is unreachable)
+bgp
+ospf
+running
+sending trap
+BGP - Pythagore: protocol status -> start
+BGP connection active
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+sending trap
+OSPF - Pythagore: neighbor @fe80::e843:deff:fe30:41ce init!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+sending trap
+OSPF - Pythagore: Neighbor at interface Pythagore-eth0 became reachable @fe80::a8:f3ff:fe94:5867!
+sending trap
+OSPF - Pythagore: Neighbor at interface Pythagore-eth1 became reachable @fe80::e843:deff:fe30:41ce!
+sending trap
+OSPF - Pythagore: Neighbor at interface Pythagore-eth2 became reachable @fe80::14ff:e4ff:fe65:521f!
+running
+sending trap
+BGP - Pythagore: protocol status -> start
+BGP connection active
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+sending trap
+BGP - Pythagore: protocol status -> start
+BGP connection active
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+sending trap
+BGP - Pythagore: protocol status -> start
+BGP connection active
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+sending trap
+OSPF - Pythagore: neighbor @fe80::14ff:e4ff:fe65:521f loading!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!
+Neighbor @fe80::14ff:e4ff:fe65:521f up!
+running
+BGP connection established
+Neighbor @fe80::a8:f3ff:fe94:5867 up!
+Neighbor @fe80::e843:deff:fe30:41ce up!

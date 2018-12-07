@@ -1,0 +1,54 @@
+// 
+// Do any local configuration here 
+// 
+
+// Consider adding the 1918 zones here, if they are not used in your 
+// organization 
+//include "/etc/bind/zones.rfc1918"; 
+
+//___________________________________________________ 
+// ZONE DE RESOLUTION DE DOMAINE exemple.com         | 
+//___________________________________________________| 
+view "intra" {
+	match-clients { fd00:200:9::/48; fd00:300:9::/48; };
+
+	zone "group9.ingi" { 
+		type master; 
+		file "/etc/bind/db.ingi.group9"; 
+		allow-query { any; };
+	};
+
+	zone "a.root-servers.net" {
+		type master;
+		file "/etc/bind/reverse/db.ingi.private.200.reverse";
+	};
+};
+
+view "inter" {
+	match-clients { any; };
+//	zone "groupe9.ingi" {
+//		type master;
+//		file "/etc/bind/db.ingi.public";
+//	};
+
+
+//____________________________ 
+// ZONE DE RESOLUTION INVERSE | 
+//____________________________| 
+	zone "fd00:300:9.in-addr.arpa" { 
+		type master; 
+		file "/etc/bind/444.333.222.111.in-addr.arpa"; 
+		// autorise le transfert vers ns.kimsufi.com 
+		allow-transfer {213.186.33.199;}; 
+		notify no; 
+	};
+
+	zone "fd00:200:9.in-addr.arpa" {
+		type master;
+		file "/etc/bind/db.invers_reslov";
+		allow-transfer {fd00:300:9::b;};
+		notify no;
+	};
+};
+// Extrait d'article provenant du site : https://www.installerunserveur.com/configuration-bind9
+

@@ -15,6 +15,7 @@ ip address add dev Pythagore-eth0 "${PREFIXBASE_as300}:2600::0"
 ip address add dev Pythagore-eth1 "${PREFIXBASE_as300}:2600::1"
 ip address add dev Pythagore-eth2 "${PREFIXBASE_as300}:2600::2"
 ip address add dev tun "${PREFIXBASE_as300}:2600::3"
+ip route add dev tun "${PREFIXBASE_as300}:2600::3"
 
 ip address add dev Pythagore-lan0 "${PREFIXBASE_as300}:5600::/$((PREFIXLEN+16))"
 ip address add dev Pythagore-lan0 "${PREFIXBASE_as200}:5600::/$((PREFIXLEN+16))"

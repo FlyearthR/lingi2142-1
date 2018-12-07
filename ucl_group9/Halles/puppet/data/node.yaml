@@ -17,5 +17,4 @@ snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
 snmp::trap_functions: 
   - bgp
   - ospf
-  - dns
-snmp::is_monitor: true
+snmp::is_monitor: false

@@ -9,7 +9,7 @@ CFG_FILE_PATH = 'ucl_group9/templates/agent_list.conf'
 SNMP_LOG_PATH = 'monitoring'
 IMG_SAVE_PATH = 'monitoring_data'
 
-GRAPH_START = '-2000'
+GRAPH_START = '-2592000'
 GRAPH_END = 'now'
 
 def graph_ram_info(db_directory, img_directory):

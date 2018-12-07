@@ -1,5 +1,0 @@
-SNMP DATA received on Fri Dec  7 12:58:00 2018:
-UCD-SNMP-MIB::ssCpuRawUser.0 = 12174048
-UCD-SNMP-MIB::ssCpuRawSystem.0 = 8305759
-UCD-SNMP-MIB::ssCpuRawIdle.0 = 616001793
-UCD-SNMP-MIB::ssCpuRawNice.0 = 1

@@ -4,9 +4,9 @@
 $TTL    604800
 @       IN      SOA     ns1.group9.ingi. admin.group9.ingi. (
                               1         ; Serial
-                          86400         ; Refresh
-                           720          ; Retry
-                        3600000         ; Expire
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
 @      			IN      NS      ns1.group9.ingi.

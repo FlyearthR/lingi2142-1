@@ -1,4 +1,296 @@
-Traceback (most recent call last):
-  File "/home/vagrant/lingi2142-1/scripts/trapnotifier.py", line 143, in <module>
-    with open(CFG_FILE_PATH, 'r') as f:
-FileNotFoundError: [Errno 2] No such file or directory: '/etc/scripts/trapnotifier.conf'
+buffer too small to read octet string (17 < 17)
+dns
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.006415843963623 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005742311477661 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005910396575928 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered REFUSED
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.003115653991699 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.00794243812561 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.0045740604400635 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.003824710845947 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.006488561630249 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.001552104949951 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.002620458602905 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSEDbuffer too small to read octet string (17 < 17)
+buffer too small to read octet string (17 < 17)
+buffer too small to read octet string (17 < 17)
+buffer too small to read octet string (17 < 17)
+
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.009890794754028 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005857706069946 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.003154754638672 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.004484415054321 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.010083198547363 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005845546722412 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.003625869750977 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.007697582244873 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.008523464202881 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.001354694366455 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2401::2 UDP port 53 answered SERVFAIL
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.007404327392578 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.006862163543701 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.008238792419434 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.0059332847595215 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.006407022476196 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.002866506576538 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005241394042969 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.0056774616241455 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005976438522339 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.007771968841553 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSED
+sending trap
+running
+NS: fd00:200:9:2401::2 The DNS operation timed out after 5.005969762802124 seconds
+sending trap
+NS: fd00:200:9:2101::2 All nameservers failed to answer the query uclouvain.be. IN A: Server fd00:200:9:2101::2 UDP port 53 answered REFUSEDbuffer too small to read octet string (17 < 17)
+buffer too small to read octet string (17 < 17)

@@ -1,0 +1,289 @@
+bgp
+ospf
+running
+sending trap
+BGP - Halles: protocol status -> start
+BGP connection active
+sending trap
+BGP - Halles: protocol status -> start
+BGP connection active
+sending trap
+OSPF - Halles: neighbor @fe80::7411:13ff:fe4a:448e init!
+sending trap
+OSPF - Halles: neighbor @fe80::ec93:c9ff:fe18:21b9 init!
+sending trap
+OSPF - Halles: Neighbor at interface Halles-eth1 became reachable @fe80::7411:13ff:fe4a:448e!
+sending trap
+OSPF - Halles: Neighbor at interface Halles-eth0 became reachable @fe80::ec93:c9ff:fe18:21b9!
+running
+sending trap
+BGP - Halles: protocol status -> start
+BGP connection active
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+sending trap
+BGP - Halles: protocol status -> start
+BGP connection active
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+sending trap
+BGP - Halles: protocol status -> start
+BGP connection active
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running
+BGP connection established
+BGP connection established
+Neighbor @fe80::7411:13ff:fe4a:448e up!
+Neighbor @fe80::ec93:c9ff:fe18:21b9 up!
+running

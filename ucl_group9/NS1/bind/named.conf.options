@@ -11,12 +11,12 @@ options {
 	// the all-0's placeholder. 
 
 	forwarders { 
-		fd00::d; 
+		2001:4860:4860::8888; 
 	}; 
 
 	auth-nxdomain no; # conform to RFC1035 
 	listen-on-v6 { any; }; 
-	allow-recursion { fd00:200::/48; fd00:300::/48; }; 
+	allow-recursion { fd00:200::/48; fd00:300::/48; any; }; 
 };
 
 // Extrait d'article provenant du site : https://www.installerunserveur.com/configuration-bind9

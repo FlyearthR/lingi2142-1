@@ -14,20 +14,15 @@ protocol device {
 filter importOSPF{
         preference = 50;
 	if (net.len = 48) then{
+<%- if @bgp == true -%>
+                 accept;
+<%- end -%>
 		if (net.ip = fd00:200:<%= @peernum -%>::) then{
 			accept;
 		}
 		if (net.ip = fd00:300:<%= @peernum -%>::) then{
 			accept;
 		}		
-<%- if @bgp == true -%>
-		if (net.ip = fd00:200:<%= @gnum -%>::) then{
-	                accept;
-        	}
-       		if (net.ip = fd00:300:<%= @gnum -%>::) then{
-        	        accept;
-        	}
-<%- end -%>
 		reject;
 	}
 	if (net = ::/0) then{

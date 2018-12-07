@@ -32,6 +32,9 @@ service bird6 stop
 
 (cd /sbin && ln -s /usr/lib/quagga/* .)
 
+
+apt-get -y -qq --force-yes install radvd bind9
+
 # Install monitoring stuff
 sed -i.bak '/http:\/\/httpredir.debian.org\/debian/ s/$/ contrib non-free/' /etc/apt/sources.list # Add contrib non-free to allow installation of snmp-mibs-downloader, create a backup of the file
 apt-get update

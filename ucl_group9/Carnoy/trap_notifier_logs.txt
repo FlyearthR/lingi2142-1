@@ -2,7 +2,263 @@ snmptrap: Failure in sendto (Network is unreachable)
 snmptrap: Failure in sendto (Network is unreachable)
 snmptrap: Failure in sendto (Network is unreachable)
 snmptrap: Failure in sendto (Network is unreachable)
-snmptrap: Failure in sendto (Network is unreachable)
-snmptrap: Failure in sendto (Network is unreachable)
-snmptrap: Failure in sendto (Network is unreachable)
-snmptrap: Failure in sendto (Network is unreachable)
+ospf
+running
+sending trap
+OSPF - Carnoy: neighbor @fe80::18ff:8ff:fefe:580f init!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+sending trap
+OSPF - Carnoy: Neighbor at interface Carnoy-eth1 became reachable @fe80::18ff:8ff:fefe:580f!
+sending trap
+OSPF - Carnoy: Neighbor at interface Carnoy-eth2 became reachable @fe80::b8:96ff:fe39:7361!
+sending trap
+OSPF - Carnoy: Neighbor at interface Carnoy-eth0 became reachable @fe80::1818:7bff:fe3a:911c!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
+running
+Neighbor @fe80::18ff:8ff:fefe:580f up!
+Neighbor @fe80::b8:96ff:fe39:7361 up!
+Neighbor @fe80::1818:7bff:fe3a:911c up!
