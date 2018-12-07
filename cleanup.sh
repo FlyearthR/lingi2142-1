@@ -40,6 +40,7 @@ for ns in $(ip netns list) ; do
     rm -rf ucl_group9/"$ns"/monitoring
     rm -rf ucl_group9/"$ns"/cron.d
     rm -rf ucl_group9/"$ns"/scripts
+    rm -rf monitoring_data
     rm -f ucl_group9/"$ns"/monitoring_logs.txt
 done
 

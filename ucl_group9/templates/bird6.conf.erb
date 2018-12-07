@@ -13,11 +13,29 @@ protocol device {
 }
 filter importOSPF{
         preference = 50;
-<%- if @bgp != true -%>
 	if (net.len = 48) then{
+		if (net.ip = fd00:200:<%= @peernum -%>::) then{
+			accept;
+		}
+		if (net.ip = fd00:300:<%= @peernum -%>::) then{
+			accept;
+		}		
+<%- if @bgp == true -%>
+		if (net.ip = fd00:200:<%= @gnum -%>::) then{
+	                accept;
+        	}
+       		if (net.ip = fd00:300:<%= @gnum -%>::) then{
+        	        accept;
+        	}
+<%- end -%>
 		reject;
 	}
-<%- end -%>
+	if (net = ::/0) then{
+		accept;
+	}
+	if (net.len < 48) then{
+		reject;
+	} 
         accept;
 }
 protocol ospf {
@@ -50,9 +68,9 @@ filter importBGP {
 }
 
 filter exportBGP{
-	if(net.len = 48) then {
-		accept;
-	}
+        if (net = fd00:<%= @asn -%>:<%= @gnum -%>::/48) then{
+                accept;
+        }
 	reject;
 }
 
@@ -62,4 +80,31 @@ protocol bgp provider<%= @asn -%> {
 	export filter exportBGP;
 	import filter importBGP;
 }
+<%- if @asn == @peerasn -%>
+filter importPeering{
+	if(net = fd00:200:<%= @peernum -%>::/48) then {
+		accept;
+	}
+	if(net = fd00:300:<%= @peernum -%>::/48) then {
+		accept;
+	}
+	reject;
+}
+filter exportPeering{
+        if (net = fd00:200:<%= @gnum -%>::/48) then{
+                accept;
+        }
+        if (net = fd00:300:<%= @gnum -%>::/48) then{
+                accept;
+        }
+        reject;
+}
+
+protocol bgp peering{
+	local as <%= @gnum -%>;
+	neighbor fd00:<%= @peerasn -%>::<%= @peernum -%> as <%= @peernum -%>;
+	export filter exportPeering;
+	import filter importPeering;
+}
+<%- end -%>
 <%- end -%>

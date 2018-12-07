@@ -1,17 +1,20 @@
 import os
 import sys
 import tempfile
-import rrdtool 
+import rrdtool
+from shutil import copyfile 
 
-CFG_FILE_PATH = 'ucl_group9/SH1C/scripts/agent_list.conf'
+MONITORS = ['MO1', 'MO2']
+CFG_FILE_PATH = 'ucl_group9/templates/agent_list.conf'
 SNMP_LOG_PATH = 'monitoring'
+IMG_SAVE_PATH = 'monitoring_data'
 
-GRAPH_START = '-1000'
+GRAPH_START = '-2000'
 GRAPH_END = 'now'
 
-def graph_ram_info(db_directory):
+def graph_ram_info(db_directory, img_directory):
     db_location = os.path.join(db_directory, 'ram_usage.rrd')
-    img_location = os.path.join(db_directory, 'ram_usage.png')
+    img_location = os.path.join(img_directory, 'ram_usage.png')
     rrdtool.graph(  img_location,
                     '--width', '1080',
                     '--height', '300',
@@ -26,9 +29,9 @@ def graph_ram_info(db_directory):
                     'LINE1:used_ram#FF0000:Used RAM ',
                     )
 
-def graph_cpu_info(db_directory):
+def graph_cpu_info(db_directory, img_directory):
     db_location = os.path.join(db_directory, 'cpu_usage.rrd')
-    img_location = os.path.join(db_directory, 'cpu_usage.png')
+    img_location = os.path.join(img_directory, 'cpu_usage.png')
     rrdtool.graph(  img_location,
                     '--width', '1080',
                     '--height', '300',
@@ -52,9 +55,9 @@ def graph_cpu_info(db_directory):
                     'LINE1:p_cpu_nice#0000FF:Nice CPU percentage',
                     )
                     
-def graph_ip_info(db_directory):
+def graph_ip_info(db_directory, img_directory):
     db_location = os.path.join(db_directory, 'ip.rrd')
-    img_location = os.path.join(db_directory, 'ip.png')
+    img_location = os.path.join(img_directory, 'ip.png')
     rrdtool.graph(  img_location,
                     '--width', '1080',
                     '--height', '300',
@@ -73,9 +76,9 @@ def graph_ip_info(db_directory):
                     'LINE1:ip_not_delivered#0000FF:Not delivered',
                     )
 
-def graph_udp_info(db_directory):
+def graph_udp_info(db_directory, img_directory):
     db_location = os.path.join(db_directory, 'udp.rrd')
-    img_location = os.path.join(db_directory, 'udp.png')
+    img_location = os.path.join(img_directory, 'udp.png')
     rrdtool.graph(  img_location,
                     '--width', '1080',
                     '--height', '300',
@@ -94,9 +97,9 @@ def graph_udp_info(db_directory):
                     'LINE1:udp_notdelivered_error#0000FF:Not delivered (other errors)',
                     )
 
-def graph_tcp_info(db_directory):
+def graph_tcp_info(db_directory, img_directory):
     db_location = os.path.join(db_directory, 'tcp.rrd')
-    img_location = os.path.join(db_directory, 'tcp.png')
+    img_location = os.path.join(img_directory, 'tcp.png')
     rrdtool.graph(  img_location,
                     '--width', '1080',
                     '--height', '300',
@@ -116,11 +119,22 @@ def graph_tcp_info(db_directory):
                     )
 
 
-
-with open(CFG_FILE_PATH, 'r') as f:
-    for line in f:
-        agent_name = line.split()[0]
-        db_directory = os.path.join(SNMP_LOG_PATH, agent_name)
-        if not os.path.exists(db_directory):
-            os.makedirs(db_directory)
-        graph_ip_info(db_directory)
+os.chdir(os.path.dirname(os.getcwd()))
+for monitor in MONITORS:
+    file_directory = os.path.join('ucl_group9', monitor, SNMP_LOG_PATH, 'traps.txt')
+    save_directory = os.path.join(IMG_SAVE_PATH, monitor)
+    if not os.path.exists(save_directory):
+        os.makedirs(save_directory)
+    copyfile(file_directory, os.path.join(save_directory, 'traps.txt'))
+    with open(CFG_FILE_PATH, 'r') as f:
+        for line in f:
+            agent_name = line.split()[0]
+            db_directory = os.path.join('ucl_group9', monitor, SNMP_LOG_PATH, agent_name)
+            img_directory = os.path.join(save_directory, agent_name)
+            if not os.path.exists(db_directory):
+                os.makedirs(db_directory)
+            if not os.path.exists(img_directory):
+                os.makedirs(img_directory)
+            graph_ip_info(db_directory, img_directory)
+            graph_cpu_info(db_directory, img_directory)
+            graph_ram_info(db_directory, img_directory)

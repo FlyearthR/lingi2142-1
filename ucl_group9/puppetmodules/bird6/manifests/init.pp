@@ -9,6 +9,8 @@ class bird6 (
 ) {
   # Get name of the node (lookup in data/node.yaml
   $node_name = lookup("name")
+  $peerasn = 200
+  $peernum = 1
   
   # Create directory with correct permissions
   file {"/etc/bird":

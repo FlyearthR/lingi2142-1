@@ -10,6 +10,7 @@ ip address add dev SH1C-eth0 "${PREFIXBASE_as300}:2200::0"
 ip address add dev SH1C-eth1 "${PREFIXBASE_as300}:2200::1"
 
 ip address add dev SH1C-lan0 "${PREFIXBASE_as300}:1200::/$((PREFIXLEN+16))"
+ip address add dev SH1C-lan0 "${PREFIXBASE_as200}:1200::/$((PREFIXLEN+16))"
 
 wait
 

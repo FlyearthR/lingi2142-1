@@ -1,5 +1,15 @@
 #!/bin/bash
 
-ip address add dev GUI-eth0 fd00:300:9:5600::1/64
+# ip address add dev ART-eth0 fd00:300:9:0300::1/64
 
-ip -6 route add ::/0 via fd00:300:9:5600:: dev GUI-eth0
+# ip -6 route add ::/0 via fd00:300:9:0300:: dev ART-eth0
+puppet apply --verbose --parser future --hiera_config=/etc/puppet/hiera.yaml /etc/puppet/site.pp --modulepath=/puppetmodules
+wait
+
+source "$(cd "$(dirname "$0")"; pwd -P)/../ucl_topo"
+
+#ip address add dev GUI-eth0 "${PREFIXBASE_as200}:5600::1/64"
+#ip address add dev GUI-eth0 "${PREFIXBASE_as300}:5600::1/64"
+
+#ip route add via "${PREFIXBASE_as300}:5600::" dev GUI-eth0 ::/0
+#ip route add via "${PREFIXBASE_as200}:5600::" dev GUI-eth0 "${PREFIXBASE_as200}::/${PREFIXLEN}"

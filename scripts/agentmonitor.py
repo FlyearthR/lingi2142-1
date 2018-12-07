@@ -32,6 +32,10 @@ SNMPv3_USER = {
 TIME_INTERVAL = 300 
 TIME_WAIT_VALUE = 330
 
+# Save logs in .txt file
+SAVE_TXT = True
+
+
 class FunctionThread(threading.Thread):
     """A thread that runs a function with its arguments"""
     def __init__(self, function, *args):
@@ -64,7 +68,7 @@ def agent_monitor(stop_event, ips, snmp_port, db_directory, time_interval, snmpv
 
     while not stop_event.is_set():
         for data_collect_fun in data_collect_funs:
-            data_collect_fun(snmp_engine, user, upd_targets, db_directory)
+            data_collect_fun(snmp_engine, user, upd_targets, db_directory, txt_backup=SAVE_TXT)
         # Wait before getting next data
         stop_event.wait(time_interval)    
 
@@ -80,15 +84,16 @@ def main():
     with open(CFG_FILE_PATH, 'r') as f:
         for line in f:
             agent_name, *agent_ips = line.split()
-            print(agent_ips)
             db_directory = os.path.join(SNMP_LOG_PATH, agent_name)
             # Create DB directory
             if not os.path.exists(db_directory):
                 os.makedirs(db_directory)
-            # Initialize database
-            initialize_ip_info_db(db_directory, TIME_INTERVAL, TIME_WAIT_VALUE)
+            # Initialize databases
+            initialize_ram_info_db(db_directory, TIME_INTERVAL, TIME_WAIT_VALUE, txt_backup=SAVE_TXT)
+            initialize_cpu_info_db(db_directory, TIME_INTERVAL, TIME_WAIT_VALUE, txt_backup=SAVE_TXT)
+            initialize_ip_info_db(db_directory, TIME_INTERVAL, TIME_WAIT_VALUE, txt_backup=SAVE_TXT)
             # Monitored items
-            monitored_items = [ip_info]
+            monitored_items = [ip_info, ram_info, cpu_info]
             # Add thread to list of threads
             threads.append(FunctionThread(agent_monitor, stop_event, agent_ips, SNMP_PORT, db_directory, TIME_INTERVAL, SNMPv3_USER, monitored_items))
     

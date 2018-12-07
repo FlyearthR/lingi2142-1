@@ -9,7 +9,8 @@ ip address add dev Stevin-eth0 "${PREFIXBASE_as200}:2500::0"
 ip address add dev Stevin-eth1 "${PREFIXBASE_as300}:2500::1"
 ip address add dev Stevin-eth0 "${PREFIXBASE_as300}:2500::0"
 
-ip address add dev Stevin-lan0 "${PREFIXBASE_as300}:f::/$((PREFIXLEN+16))"
+ip address add dev Stevin-lan0 "${PREFIXBASE_as300}:4500::/$((PREFIXLEN+16))"
+ip address add dev Stevin-lan0 "${PREFIXBASE_as200}:4500::/$((PREFIXLEN+16))"
 
 wait
 

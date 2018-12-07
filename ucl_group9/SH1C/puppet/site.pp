@@ -8,3 +8,4 @@ Exec { path => $default_path }
 include bird6
 include snmp
 include radvd
+include bind

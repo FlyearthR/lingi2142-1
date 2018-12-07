@@ -25,11 +25,16 @@ def update_rrd(snmp_engine, user, upd_target, data, db_location, file_location):
         else:
             # If no error has occurred, write data in file and in database
             rrd_cmd='N'
-            with open(file_location, 'a+') as f:
-                t = time.gmtime()
-                f.write("SNMP DATA received on %s:\n" % time.strftime('%c', t))
+            t = time.gmtime()
+            if file_location is not None:
+                with open(file_location, 'a+') as f:
+                    f.write("SNMP DATA received on %s:\n" % time.strftime('%c', t))
+                    for name, val in varBinds:
+                        f.write('%s = %s\n' % (name.prettyPrint(), val.prettyPrint()))
+                        rrd_cmd += ':' + val.prettyPrint()
+                    rrdtool.update(db_location, rrd_cmd)
+            else:
                 for name, val in varBinds:
-                    f.write('%s = %s\n' % (name.prettyPrint(), val.prettyPrint()))
                     rrd_cmd += ':' + val.prettyPrint()
                 rrdtool.update(db_location, rrd_cmd)
             return 'DATA_OK'
@@ -40,13 +45,14 @@ def update_rrd(snmp_engine, user, upd_target, data, db_location, file_location):
 
 
 """INITIALIZATION FUNCTIONS"""
-def initialize_ip_info_db(directory, time_interval, time_wait_value):
+def initialize_ip_info_db(directory, time_interval, time_wait_value, txt_backup=False):
     """Initialises the rrd and the log file"""
     db_location = os.path.join(directory, 'ip.rrd')
-    file_location = os.path.join(directory, 'ip.txt')
-    # Create txt log file
-    os.umask(0)
-    open(os.open(file_location, os.O_CREAT | os.O_WRONLY, 0o777), 'w+').close()
+    if txt_backup:
+        file_location = os.path.join(directory, 'ip.txt')
+        # Create txt log file
+        os.umask(0)
+        open(os.open(file_location, os.O_CREAT | os.O_WRONLY, 0o777), 'w+').close()
     # Create round-robin database
     rrdtool.create( db_location, 
                     '--start', 'now', 
@@ -56,11 +62,48 @@ def initialize_ip_info_db(directory, time_interval, time_wait_value):
                     'DS:forwarded:COUNTER:'+str(time_wait_value)+':0:U', 
                     'RRA:AVERAGE:0.5:1:8640')
 
+def initialize_ram_info_db(directory, time_interval, time_wait_value, txt_backup=False):
+    """Initialises the rrd and the log file"""
+    db_location = os.path.join(directory, 'ram_usage.rrd')
+    if txt_backup:
+        file_location = os.path.join(directory, 'ram_usage.txt')
+        # Create txt log file
+        os.umask(0)
+        open(os.open(file_location, os.O_CREAT | os.O_WRONLY, 0o777), 'w+').close()
+    # Create round-robin database
+    rrdtool.create( db_location, 
+                    '--start', 'now', 
+                    '--step', str(time_interval), 
+                    'DS:used:GAUGE:'+str(time_wait_value)+':0:U',
+                    'DS:free:GAUGE:'+str(time_wait_value)+':0:U', 
+                    'RRA:AVERAGE:0.5:1:100')
+
+def initialize_cpu_info_db(directory, time_interval, time_wait_value, txt_backup=False):
+    """Initialises the rrd and the log file"""
+    db_location = os.path.join(directory, 'cpu_usage.rrd')
+    if txt_backup:
+        file_location = os.path.join(directory, 'cpu_usage.txt')
+        # Create txt log file
+        os.umask(0)
+        open(os.open(file_location, os.O_CREAT | os.O_WRONLY, 0o777), 'w+').close()
+    # Create round-robin database
+    rrdtool.create( db_location, 
+                    '--start', 'now', 
+                    '--step', str(time_interval), 
+                    'DS:user:GAUGE:'+str(time_wait_value)+':0:U',
+                    'DS:system:GAUGE:'+str(time_wait_value)+':0:U',
+                    'DS:idle:GAUGE:'+str(time_wait_value)+':0:U', 
+                    'DS:nice:GAUGE:'+str(time_wait_value)+':0:U', 
+                    'RRA:AVERAGE:0.5:1:100')
+
 """DATA COLLECTION FUNCTIONS"""
-def ip_info(snmp_engine, user, upd_targets, directory):
+def ip_info(snmp_engine, user, upd_targets, directory, txt_backup=False):
     """Collects information about the IP packets going through this agent's interfaces"""
     db_location = os.path.join(directory, 'ip.rrd')
-    file_location = os.path.join(directory, 'ip.txt')
+    if txt_backup:
+        file_location = os.path.join(directory, 'ip.txt')
+    else:
+        file_location = None
     data = (
         ObjectType(ObjectIdentity('IP-MIB', 'ipInReceives', 0)), # Total number of received input datagrams (including those received in error)
         ObjectType(ObjectIdentity('IP-MIB', 'ipInDelivers', 0)), # Total number of input datagrams successfully delivered to IP user protocols
@@ -69,7 +112,47 @@ def ip_info(snmp_engine, user, upd_targets, directory):
     i = 0
     msg = ''
     while i < len(upd_targets) and msg != 'DATA_OK':
-        msg = update_rrd(snmp_engine, user, upd_targets[i], data, db_location, file_location)   ############################
+        msg = update_rrd(snmp_engine, user, upd_targets[i], data, db_location, file_location)
+        i += 1
+    if msg != 'DATA_OK':
+        print('Unable to get snmp data from agent: %s' % msg, file=sys.stderr)
+
+def ram_info(snmp_engine, user, upd_targets, directory, txt_backup=False):
+    """Collects information about the RAM of an agent"""
+    db_location = os.path.join(directory, 'ram_usage.rrd')
+    if txt_backup:
+        file_location = os.path.join(directory, 'ram_usage.txt')
+    else:
+        file_location = None
+    data = (
+        ObjectType(ObjectIdentity('UCD-SNMP-MIB', 'memAvailReal', 0)),
+        ObjectType(ObjectIdentity('UCD-SNMP-MIB', 'memTotalFree', 0))
+    )
+    i = 0
+    msg = ''
+    while i < len(upd_targets) and msg != 'DATA_OK':
+        msg = update_rrd(snmp_engine, user, upd_targets[i], data, db_location, file_location)
+        i += 1
+    if msg != 'DATA_OK':
+        print('Unable to get snmp data from agent: %s' % msg, file=sys.stderr)
+
+def cpu_info(snmp_engine, user, upd_targets, directory, txt_backup=False):
+    """Collects information about the CPU usage of an agent"""
+    db_location = os.path.join(directory, 'cpu_usage.rrd')
+    if txt_backup:
+        file_location = os.path.join(directory, 'cpu_usage.txt')
+    else:
+        file_location = None
+    data = (
+        ObjectType(ObjectIdentity('UCD-SNMP-MIB', 'ssCpuRawUser', 0)), # % user CPU time
+        ObjectType(ObjectIdentity('UCD-SNMP-MIB', 'ssCpuRawSystem', 0)), # % system CPU time
+        ObjectType(ObjectIdentity('UCD-SNMP-MIB', 'ssCpuRawIdle', 0)), # % idle CPU time
+        ObjectType(ObjectIdentity('UCD-SNMP-MIB', 'ssCpuRawNice', 0)) # % nice CPU time
+    )
+    i = 0
+    msg = ''
+    while i < len(upd_targets) and msg != 'DATA_OK':
+        msg = update_rrd(snmp_engine, user, upd_targets[i], data, db_location, file_location)
         i += 1
     if msg != 'DATA_OK':
         print('Unable to get snmp data from agent: %s' % msg, file=sys.stderr)

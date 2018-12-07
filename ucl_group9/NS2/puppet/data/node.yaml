@@ -6,3 +6,6 @@ snmp::sysContact: Group 9 <arthur.sluyters@student.uclouvain.be>
 snmp::trap_functions:
   - dns
 snmp::is_monitor: false
+# Bind specific infos
+bind::bind: true
+

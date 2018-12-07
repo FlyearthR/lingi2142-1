@@ -12,15 +12,15 @@ ip6tables -P FORWARD DROP
 ip6tables -P OUTPUT DROP
 
 # Allow loopback
-ip6tables -A INPUT -i lo -j ACCEPT
-ip6tables -A OUTPUT -o lo -j ACCEPT
+ip6tables -A INPUT	-i lo	-j ACCEPT
+ip6tables -A OUTPUT	-o lo	-j ACCEPT
 
-# Allow established and related connections
-ip6tables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
-ip6tables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
-ip6tables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+# Allow established connections
+ip6tables -A INPUT	-m state --state ESTABLISHED	-j ACCEPT
+ip6tables -A FORWARD	-m state --state ESTABLISHED	-j ACCEPT
+ip6tables -A OUTPUT	-m state --state ESTABLISHED	-j ACCEPT
 
 # Dropping invalid packets
-ip6tables -A INPUT -m state --state INVALID -j DROP
-ip6tables -A FORWARD -m state --state INVALID -j DROP
-ip6tables -A OUTPUT -m state --state INVALID -j DROP
+ip6tables -A INPUT	-m state --state INVALID	-j DROP
+ip6tables -A FORWARD	-m state --state INVALID	-j DROP
+ip6tables -A OUTPUT	-m state --state INVALID	-j DROP

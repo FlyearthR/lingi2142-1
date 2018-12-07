@@ -11,7 +11,8 @@ ip address add dev Carnoy-eth0 "${PREFIXBASE_as300}:2400::0"
 ip address add dev Carnoy-eth1 "${PREFIXBASE_as300}:2400::1"
 ip address add dev Carnoy-eth2 "${PREFIXBASE_as300}:2400::2"
 
-ip address add dev Carnoy-lan0 "${PREFIXBASE_as200}:e::/$((PREFIXLEN+16))"
+ip address add dev Carnoy-lan0 "${PREFIXBASE_as200}:3400::/$((PREFIXLEN+16))"
+ip address add dev Carnoy-lan0 "${PREFIXBASE_as300}:3400::/$((PREFIXLEN+16))"
 ip address add dev Carnoy-lan1 "${PREFIXBASE_as200}:2401::/$((PREFIXLEN+16))"
 ip address add dev Carnoy-lan1 "${PREFIXBASE_as300}:2401::/$((PREFIXLEN+16))"
 

@@ -51,7 +51,6 @@ def main():
             # Write data in file
             for varbind in varBinds:
                 f.write(varbind.prettyPrint()+'\n')
-                print(varbind.prettyPrint())
             f.write('\n')
             
     # Register SNMP Application at the SNMP engine

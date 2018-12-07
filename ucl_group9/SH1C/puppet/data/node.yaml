@@ -16,14 +16,10 @@ snmp::is_monitor: false
 
 #RADVD specific infos
 radvd::radvd: true
-#radvd::prefix: fd00:300:9:1200
-#radvd::route: fd00:300:9:1200
-#radvd::interface: SH1C-lan0
 radvd::lans:
   lan0: 
     - SH1C-lan0
     - 1200
-#  lan1: 
-#    - SH1C-lan1
-#    - 3100
-#  - lan0: ['SH1C-lan0','1200',]
+  lan1: 
+    - SH1C-lan1
+    - 1200

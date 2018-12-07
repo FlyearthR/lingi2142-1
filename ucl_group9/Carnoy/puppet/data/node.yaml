@@ -18,10 +18,7 @@ snmp::is_monitor: false
 
 #RADVD specific infos
 radvd::radvd: true
-#radvd::prefix: 4400
-#radvd::route: 4400
-#radvd::interface: 
-#    - Carnoy-lan0
 radvd::lans:
-  - lan0: ['Carnoy-lan0','4400']
-
+  lan0:
+    - Carnoy-lan0
+    - 3400

@@ -1,0 +1,3 @@
+SNMP DATA received on Fri Dec  7 12:58:03 2018:
+UCD-SNMP-MIB::memAvailReal.0 = 601772
+UCD-SNMP-MIB::memTotalFree.0 = 1074736

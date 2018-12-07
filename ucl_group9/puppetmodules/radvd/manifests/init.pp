@@ -21,6 +21,7 @@ class radvd (Boolean $radvd = false, Hash $lans = {}) {
       ensure => file,
       owner => root,
       group => root,
+      mode => '777',
       content => template("/templates/init.d/radvd"),
     }
     exec { "radvd":

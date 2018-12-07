@@ -18,4 +18,4 @@ radvd::radvd: true
 radvd::lans:
   lan0:
     - Michotte-lan0
-    - 0300
+    - 300

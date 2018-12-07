@@ -7,4 +7,5 @@ Exec { path => $default_path }
 # If you want to create your own module, see https://puppet.com/docs/puppet/5.3/modules_fundamentals.html
 include bird6
 include snmp
-#include radvd
+include radvd
+include bind

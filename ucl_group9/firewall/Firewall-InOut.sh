@@ -23,26 +23,26 @@ IOT2="fd00:300:9:3000::/52"
 # ip6tables -A OUTPUT -o $interface ! -s $router -j DROP
 
 # Dropping inner addresses from outside the network
-ip6tables -A INPUT -i $interface -s $router -j DROP
-ip6tables -A FORWARD -i $interface -s $router -j DROP
+ip6tables -A INPUT	-i $interface	-s $router	-j DROP
+ip6tables -A FORWARD	-i $interface	-s $router	-j DROP
 
 # Allow BGP
 for p in "tcp" "udp";
 do
-	ip6tables -A INPUT -i $interface -p $p --dport 179 -j ACCEPT
-	ip6tables -A INPUT -i $interface -p $p --sport 179 -j ACCEPT
-	ip6tables -A OUTPUT -o $interface -p $p --dport 179 -j ACCEPT
+	ip6tables -A INPUT	-i $interface	-p $p --dport 179	-j ACCEPT
+	ip6tables -A INPUT	-i $interface	-p $p --sport 179	-j ACCEPT
+	ip6tables -A OUTPUT	-o $interface	-p $p --dport 179	-j ACCEPT
 done;
 
 # Block OSPF
-ip6tables -A INPUT -i $interface -p 89 -j DROP
-ip6tables -A FORWARD -i $interface -p 89 -j DROP
-ip6tables -A FORWARD -o $interface -p 89 -j DROP
-ip6tables -A OUTPUT -o $interface -p 89 -j DROP
+ip6tables -A INPUT	-i $interface	-p 89	-j DROP
+ip6tables -A FORWARD	-i $interface	-p 89	-j DROP
+ip6tables -A FORWARD	-o $interface	-p 89	-j DROP
+ip6tables -A OUTPUT	-o $interface	-p 89	-j DROP
 
 # Bloc IOT
 for d in $IOT1 $IOT2;
 do
-	ip6tables -A FORWARD -i $interface -d $d -j DROP
-	ip6tables -A FORWARD -o $interface -s $d -j DROP
+	ip6tables -A FORWARD	-i $interface	-d $d	-j DROP
+	ip6tables -A FORWARD	-o $interface	-s $d	-j DROP
 done;
